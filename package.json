@@ -1,10 +1,14 @@
 {
   "devDependencies": {
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2",
     "babel-eslint": "^10.1.0",
+    "babel-jest": "^29.7.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.29.0",
     "hint": "^7.1.10",
+    "jest": "^29.7.0",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
@@ -14,6 +18,7 @@
   "scripts": {
     "lint": "npx eslint **/*.{js,jsx} --fix && npx stylelint **/*.{css,scss} --fix",
     "build": "npx tailwindcss -i ./src/css/input.css -o ./src/css/main.css",
-    "watch": "npx tailwindcss -i ./src/css/input.css -o ./src/css/main.css --watch"
+    "watch": "npx tailwindcss -i ./src/css/input.css -o ./src/css/main.css --watch",
+    "test": "jest --coverage"
   }
 }
